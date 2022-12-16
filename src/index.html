@@ -20,6 +20,22 @@
 	</header>
 	<main>
 		<!-- Main body here -->
+		<div class="designer container">
+			<canvas id="canvas" width="384" height="512">
+				<script>
+					function draw() {
+					const canvas = document.getElementById("canvas");
+					if (canvas.getContext) {
+					  const ctx = canvas.getContext("2d");
+				  
+					  ctx.fillRect(25, 25, 100, 100);
+					  ctx.clearRect(45, 45, 60, 60);
+					  ctx.strokeRect(50, 50, 50, 50);
+					}
+				  }
+				</script>
+			</canvas>
+		</div>
 	</main>
 	<script src="item-properties.js"></script> <!-- Script at the end of page body speeds up loading -->
 	<script src="index.js"></script>
